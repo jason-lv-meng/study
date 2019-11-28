@@ -16,8 +16,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-    httpsclient.cpp \
-    src/httpdownloadprivate.cpp
+    src/httpdownloadprivate.cpp \
+    HttpsFile.cpp \
+    HttpsMsg.cpp \
+    HttpsClient.cpp \
+    HttpsBase.cpp
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
@@ -25,6 +28,9 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
 HEADERS += \
-    httpsclient.h \
     include/httpdownload.h \
-    src/httpdownloadprivate.h
+    src/httpdownloadprivate.h \
+    HttpsFile.h \
+    HttpsMsg.h \
+    HttpsClient.h \
+    HttpsBase.h

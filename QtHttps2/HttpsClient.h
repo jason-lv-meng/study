@@ -27,11 +27,6 @@ public:
 
     ~HttpsClient();
 
-public slots:
-    void replyFinished(QNetworkReply*reply);
-
-private:
-    QNetworkAccessManager *manager;  //网络链接管理器
 
 };
 

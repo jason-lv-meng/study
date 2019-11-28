@@ -1,0 +1,12 @@
+[submodule "src/ezlog"]
+	path = src/ezlog
+	url = git://github.com/wang-bin/ezlog.git
+[submodule "src/ProgramOptions"]
+	path = src/ProgramOptions
+	url = git://github.com/wang-bin/ProgramOptions.git
+[submodule "src/NextEffect"]
+	path = src/NextEffect
+	url = git://github.com/wang-bin/NextEffect.git
+[submodule "src/libexif-port"]
+	path = src/libexif-port
+	url = git://github.com/wang-bin/libexif-port.git

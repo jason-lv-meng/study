@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>i18n/PhotoKit_zh_CN.qm</file>
+        <file>icons/close.png</file>
+        <file>icons/ok.png</file>
+    </qresource>
+</RCC>

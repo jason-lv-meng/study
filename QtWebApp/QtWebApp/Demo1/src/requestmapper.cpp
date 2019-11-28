@@ -13,6 +13,7 @@
 #include "controller/formcontroller.h"
 #include "controller/fileuploadcontroller.h"
 #include "controller/sessioncontroller.h"
+#include <QDebug>
 
 RequestMapper::RequestMapper(QObject* parent)
     :HttpRequestHandler(parent)
@@ -31,6 +32,10 @@ void RequestMapper::service(HttpRequest& request, HttpResponse& response)
 {
     QByteArray path=request.getPath();
     qDebug("RequestMapper: path=%s",path.data());
+    printf("RequestMapper: path=%s\n",path.data());
+    printf("RequestMapper: body=%s\n",request.getBody());
+    printf("RequestMapper: token=%s\n",request.getHeader("token"));
+    printf("RequestMapper: fileName=%s\n",request.getHeader("fileName"));
 
     // For the following pathes, each request gets its own new instance of the related controller.
 
